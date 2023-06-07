@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=se, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css" />
+  </head>
+
+  <body>
+    <form class="container">
+      <label>CARDHOLDER NAME</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="e.g. Jane Appleseed"
+      />
+      <label>NUMBER</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        placeholder="e.g. 1234 5678 9123 0000"
+      />
+      <div class="date-cvc">
+        <label class="label-date">EXP. DATE (MM/YY)</label>
+        <input class="date" type="datetime" id="month" name="month" placeholder="MM" />
+        <input class="date" type="datetime" id="year" name="year" placeholder="YY" />
+        <label class="label-cvc">CVC</label>
+        <input class="cvc" type="number" id="number" name="card" placeholder="e.g. 123" />
+      </div>
+      <button type="submit" class="boton">Confirm</button>
+    </form>
+  </body>
+</html>
